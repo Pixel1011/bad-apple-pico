@@ -21,7 +21,6 @@ void setup() {
     Serial.println("LCD failed");
     delay(1000);
   }
-  delay(4000);
 }
 unsigned long lastTime = 0;
 unsigned int frameCount = 0;
@@ -31,39 +30,27 @@ bool firstFrame = true;
 unsigned int appleframe = 1;
 
 void loop() {
-  Serial.println("Looping");
   if (u8g2.availableForWrite() > 0) {
     Serial.println("u8g2 unavailable for write");
     return;
   }
 
   long currentTime = millis();
+  fps = (1000.0f / (float)(currentTime - lastTime));
+  lastTime = currentTime;
 
-  if (firstFrame) {
-    firstFrame = false;
-    delay(500);
-    
-  } else {
-    fps = (1000.0f / (float)(currentTime - lastTime));
-    lastTime = currentTime;
-
-  }
-  Serial.println("FPS: calculated");
   // play video
   u8g2.clearBuffer();
   drawFile(0, 0, appleframe);
   u8g2.sendBuffer();
-  Serial.println("Sent buffer");
   Serial.println("Frame: " + String(appleframe) + "/3483" + " FPS: " + String(fps, 4));
   appleframe++;
 
   if (appleframe > 3483) appleframe = 1;
   // limit to 15 fps
-  Serial.println("Delaying " + String(1000 / 15) + " " + String(millis()) + " " + String(currentTime));
   if ((long)(1000/15) - ((long)millis() - currentTime) > 0) {
     delay(1000 / 15 - (millis() - currentTime));
   }
-  Serial.println("Done delaying");
 }
 
 void drawFile(u8g2_int_t x, u8g2_int_t y, int frame) {
@@ -76,12 +63,10 @@ void drawFile(u8g2_int_t x, u8g2_int_t y, int frame) {
   File myFile = SD.open("Complete.bin");
   if (myFile) {
     int readbytes = frame * 1026;
-    Serial.println("Reading from " + String(readbytes));
     myFile.seek(readbytes);
     w = myFile.read(); 
     h = myFile.read();
     // expecting 128x64
-    Serial.println("Read bytes " + String(w) + " " + String(h));
 
     while( h > 0 ) { 
       xpos = x;
