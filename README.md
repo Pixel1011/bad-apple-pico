@@ -13,5 +13,4 @@ SD TX/MOSI -> GP3
 SD RX/MISO -> GP4
 SD CS -> GP5
 
-
-
+note: got bored so made this in 2 days, was fun to actually get video running on that screen
