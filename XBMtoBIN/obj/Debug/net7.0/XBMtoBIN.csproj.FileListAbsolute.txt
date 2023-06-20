@@ -1,0 +1,15 @@
+C:\Users\Pixel\source\repos\XBMtoBIN\bin\Debug\net7.0\XBMtoBIN.exe
+C:\Users\Pixel\source\repos\XBMtoBIN\bin\Debug\net7.0\XBMtoBIN.deps.json
+C:\Users\Pixel\source\repos\XBMtoBIN\bin\Debug\net7.0\XBMtoBIN.runtimeconfig.json
+C:\Users\Pixel\source\repos\XBMtoBIN\bin\Debug\net7.0\XBMtoBIN.dll
+C:\Users\Pixel\source\repos\XBMtoBIN\bin\Debug\net7.0\XBMtoBIN.pdb
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.csproj.AssemblyReference.cache
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.AssemblyInfoInputs.cache
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.AssemblyInfo.cs
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.csproj.CoreCompileInputs.cache
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.dll
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\refint\XBMtoBIN.dll
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.pdb
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\XBMtoBIN.genruntimeconfig.cache
+C:\Users\Pixel\source\repos\XBMtoBIN\obj\Debug\net7.0\ref\XBMtoBIN.dll
